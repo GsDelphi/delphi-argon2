@@ -191,6 +191,14 @@ uses
 const
 	ARGON_VERSION: Cardinal = $13;
 
+  //  WinNls.h line 175
+  //  String Flags.
+  //
+  LINGUISTIC_IGNORECASE      = $00000010;  // linguistically appropriate 'ignore case'
+  LINGUISTIC_IGNOREDIACRITIC = $00000020;  // linguistically appropriate 'ignore nonspace'
+
+  NORM_LINGUISTIC_CASING     = $08000000;  // use linguistic rules for casing
+
 {$IFDEF COMPILER_7_DOWN}
 function MAKELANGID(p, s: WORD): WORD;
 begin
